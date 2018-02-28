@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+/*----------------------------------------------------------------------------
+RESET
+----------------------------------------------------------------------------*/
+*{
+  margin : 0;
+}
+a {
+  text-decoration: none;
+}
+*,*::after,*::before{
+  clear: left;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------------------------------------------
+COMMONS
+------------------------------------------------------------------------ */
+.block-header .inner ,
+.block-main .inner{
+  width: 1200px;
+  margin:0 auto;
+  }
+  .clearfix{
+    clear: both;
+  }
+  .group:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+}
+
+/* -------
+
+
+/*---------------------------------------------------------------------------
+BODY
+---------------------------------------------------------------------------*/
+
+body{
+  height: 600px;
+  }
+
+
+/* ************************************************
+HEADER
+**************************************************/
+
+
+
+.block-header {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px grey;
+}
+
+
+
+.deconexion img{
+    
+    float: right;
+    margin-top: -3rem;
+    width: 5rem;
+    margin-right: 2rem;
+
+}
+
+
+
+
+/**************************************************
+NAV 
+
+**********************************************/
+
+
+
+
+
+.block-nav {
+  
+   margin-left: 28rem;
+  margin-top: -5rem;
+}
+.block-nav .menu > li {
+  display: inline-block;
+  margin-left: 5rem;
+
+  
+}
+
+
+
+.block-nav .menu > li > a {
+  font: 14px/1, Arial, sans-serif;
+
+  display: block;
+   font-family: 'Bungee', cursive;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font: bold;
+  color: #3c0014;
+}
+
+
+.block-nav .menu  > li > a:hover,
+.block-nav .menu >li >a:focus{
+  
+ color: #ffc30f;
+border-bottom: 2px solid #3c0014 ;
+
+ 
+ 
+
+} 
+/*----------------------------------------------------------------------------
+MAIN
+----------------------------------------------------------------------------*/
+
+.block-main .bienvenue{
+    
+ position: absolute;
+ font-family: 'Bungee', cursive;
+ margin-left: 30rem;
+ color: #ffc30f;
+font-size: 2rem;
+    
+}
+
+
+
+.block-main .user{
+    
+ position: relative ;
+margin-left: 45rem;;
+margin-top: 3rem;    
+font-family: 'Bungee', cursive;
+color: #ffc30f;
+font-size: 2rem;
+    
+}
+
+
+.mesboutons . {
+
+
+    padding: 200px;
+
+
+  }
+.block-main .niv1{
+
+
+    display: inline;
+    float: left;
+    margin: 100px;
+    margin-left: 12.5rem;
+}
+/*===================BOUTON==========================*/
+.block-main .inner input{
+
+
+    margin: 15px  15px;
+    padding: 1% 5%;
+    background: transparent ;
+    color: #a51130;
+    font-family:  'Bungee', cursive;
+    font-style: bold;
+    width: 250px ;
+    height: 60px;
+   border: 3px solid #a51130;
+    -webkit-transition: all .5s cubic-bezier( .6, 2, .4, 1);
+        -moz-transition: all .5s cubic-bezier( .6, 2, .4, 1);
+         -ms-transition: all .5s cubic-bezier( .6, 2, .4, 1);
+          -o-transition: all .5s cubic-bezier( .6, 2, .4, 1);
+             transition: all .5s cubic-bezier( .6, 2, .4, 1);
+  }
+.block-main .inner input:hover,
+.block-main .inner input:focus{
+    
+  -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+     -ms-transform: scale(1.0);
+      -o-transform: scale(1.0);
+         transform: scale(1.2);
+    background: #a51130;
+    color:white;
+
+}

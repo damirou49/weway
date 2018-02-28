@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+/*----------------------------------------------------------------------------
+RESET
+----------------------------------------------------------------------------*/
+*{
+  margin : 0;
+}
+a {
+  text-decoration: none;
+}
+*,*::after,*::before{
+  clear: left;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------------------------------------------
+COMMONS
+------------------------------------------------------------------------ */
+.block-header .inner ,
+.block-main .inner{
+  width: 1200px;
+  margin:0 auto;
+  }
+  .clearfix{
+    clear: both;
+  }
+  .group:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+
+
+/* -------
+
+
+/*---------------------------------------------------------------------------
+BODY
+---------------------------------------------------------------------------*/
+
+body{
+  height: 600px;
+  }
+
+
+/*----------------------------------------------------------------------------
+HEADER
+----------------------------------------------------------------------------*/
+
+.block-header {
+  width: 100%;
+ height: 8rem;
+  display: inline-block;
+ border-bottom: solid 1px grey;
+  
+}
+
+.deconexion img{
+    
+    float: right;
+    margin-top: -3rem;
+    width: 5rem;
+    margin-right: 2rem;
+
+}
+
+
+/**************************************************
+NAV 
+
+**********************************************/
+
+
+
+
+
+.block-nav {
+  
+   margin-left: 9rem;
+  margin-top: -5rem;
+}
+.block-nav .menu > li {
+  display: inline-block;
+  margin-left: 2rem;
+
+  
+}
+
+
+
+.block-nav .menu > li > a {
+  font: 14px/1, Arial, sans-serif;
+
+  display: block;
+   font-family: 'Bungee', cursive;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font: bold;
+  color: #3c0014;
+}
+
+
+.block-nav .menu  > li > a:hover,
+.block-nav .menu >li >a:focus{
+  
+color: #ffc30f;
+border-bottom: 2px solid #3c0014 ;

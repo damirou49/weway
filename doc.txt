@@ -1,0 +1,87 @@
+/*
+
+// Vérification de la validité des informations
+
+
+// Hachage du mot de passe
+
+ $pass_hache = password_hash($_POST['mdp'], PASSWORD_DEFAULT);
+
+
+// Insertion
+
+$req = $bdd->prepare('INSERT INTO connexion('',firstname, lastname, mdp) VALUES(:'',:firstname, :lastname, :mdp');
+
+$req->execute(array(
+
+'firstname' => firstname,
+
+'lastname' => lastname,
+
+'mdp' => $pass_hache));
+
+*/
+
+// on teste si le visiteur a soumis le formulaire
+if (isset($_POST['inscription']) && $_POST['inscription'] == 'Inscription') {
+	// on teste l'existence de nos variables. On teste également si elles ne sont pas vides
+	if ((isset($_POST['login']) && !empty($_POST['login'])) && (isset($_POST['pass']) && !empty($_POST['pass'])) && (isset($_POST['pass_confirm']) && !empty($_POST['pass_confirm']))) {
+	// on teste les deux mots de passe
+	if ($_POST['pass'] != $_POST['pass_confirm']) {
+		$erreur = 'Les 2 mots de passe sont différents.';
+	}
+	else {
+		$base = mysql_connect ('serveur', 'login', 'password');
+		mysql_select_db ('nom_base', $base);
+
+		// on recherche si ce login est déjà utilisé par un autre membre
+		$sql = 'SELECT count(*) FROM membre WHERE login="'.mysql_escape_string($_POST['login']).'"';
+		$req = mysql_query($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());
+		$data = mysql_fetch_array($req);
+
+		if ($data[0] == 0) {
+		$sql = 'INSERT INTO membre VALUES("", "'.mysql_escape_string($_POST['login']).'", "'.mysql_escape_string(md5($_POST['pass'])).'")';
+		mysql_query($sql) or die('Erreur SQL !'.$sql.'<br />'.mysql_error());
+
+		session_start();
+		$_SESSION['login'] = $_POST['login'];
+		header('Location: membre.php');
+		exit();
+		}
+		else {
+		$erreur = 'Un membre possède déjà ce login.';
+		}
+	}
+	}
+	else {
+	$erreur = 'Au moins un des champs est vide.';
+	}
+}
+?>
+
+
+if(!empty($_POST['pseudo']))
+  {
+  // D'abord, je me connecte à la base de données.
+  $con = new PDO('mysql:host=localhost;dbname=projet;charset=utf8', 'root', '');
+  if ($con) print("\n"."connection ok !");
+
+  // Je mets aussi certaines sécurités ici…
+  $passe = mysql_real_escape_string(htmlspecialchars($_POST['passe']));
+  $passe2 = mysql_real_escape_string(htmlspecialchars($_POST['passe2']));
+  if($passe == $passe2)
+  {
+  $nom = mysql_real_escape_string(htmlspecialchars($_POST['nom']));
+  $prenom = mysql_real_escape_string(htmlspecialchars($_POST['prenom']));
+  // Je vais crypter le mot de passe.
+  $passe = sha1($passe);
+
+  mysql_query("INSERT INTO connexion VALUES('', '$nom', '$prenom', '$passe')");
+  }
+
+  else
+  {
+  echo 'Les deux mots de passe que vous avez rentrés ne correspondent pas…';
+  }
+  }
+    ?>

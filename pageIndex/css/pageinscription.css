@@ -1,0 +1,116 @@
+/* -----------------------------------------
+RESET
+----------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+}
+ul, ol {
+   margin: 0;
+   padding: 0;
+}
+a, p {
+   text-decoration: none;
+   color: white;
+}
+
+.block-nav,
+.block-center,
+.block-main,
+.block-footer {
+  font: 15px/1.5 Tahoma, Arial, sans-serif;
+}
+
+body {
+  background: url(../images/port.jpeg);
+  background-size: cover;
+}
+
+/* Header*/
+
+.block-header {
+  width: 100%;
+  background: #676D79;
+  top: 0;
+  position: fixed;
+  z-index: 200;
+}
+
+.block-header h1 {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 2px 0;
+}
+
+img {
+  max-width: 100% auto;
+  max-height: 100% auto;
+  height: 50px;
+}
+
+/*navigation */
+
+/*communs*/
+.block-nav li,
+.block-nav a {
+  display: block;
+}
+
+
+
+.block-nav {
+  display: inline-block;
+}
+.block-nav .menu > li {
+  float: left;
+  /* display: block;*/
+  list-style: none;
+  /* border: border-width border-style border-color */
+  position: relative;
+}
+
+.block-nav .menu > li:last-child {
+  border-right: 0;
+}
+
+.block-nav .menu > li > a {
+  font: 14px/1, Arial, sans-serif;
+  padding: 10px 15px;
+  display: block;
+}
+
+
+/*formulaire */
+
+form {
+  background: #676D79;
+  width: 30%;
+  margin: 0 32%;
+  height: 900px;
+  padding: 70px;
+  opacity: 0.8;
+}
+
+label
+{
+  display: block;
+  width: 150px;
+  float: left;
+}
+
+form p {
+  color: black;
+}
+
+/* footer */
+
+.block-footer {
+  width: 100%;
+  background: #676D79;
+  bottom: 0;
+  position: fixed;
+  z-index: 200;
+  text-align: center;
+}

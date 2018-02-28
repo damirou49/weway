@@ -1,0 +1,141 @@
+/* -----------------------------------------
+RESET
+----------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+}
+ul, ol {
+   margin: 0;
+   padding: 0;
+}
+a {
+   text-decoration: none;
+}
+
+.block-nav,
+.block-center,
+.block-main,
+.block-footer {
+  font: 15px/1.5 Tahoma, Arial, sans-serif;
+}
+
+
+
+
+
+  body {
+      background: url(../../images/port.jpeg);
+      background-size: cover;      
+   }
+
+
+
+
+/**************************************************
+NAV 
+
+**********************************************/
+ 
+
+
+.nav-link {
+  
+  font-family: 'Bungee', cursive;
+  font-size: 1.5em;
+  text-align: center;
+  margin-left: 1em;
+ 
+
+}
+
+
+ .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, 
+ .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link{
+     
+ 
+  color:white;
+     
+     
+     
+}   
+    
+  
+.nav-link:hover,
+.nav-link:focus{
+  
+         color:#ffc30f;}
+
+/*****************************************
+MAIN
+******************************************/
+
+.marketing{
+    
+  margin-top: 55%;
+  font-family: 'Bungee', cursive;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: #ffc30f
+}
+
+
+.marketing .title{
+    
+    font-size: 4em;
+}
+
+
+
+
+
+.marketing .btn-outline-primary{
+
+   
+
+    text-align: center;
+    margin-top: 2em;
+    background: transparent ;
+    color:white;
+    text-align: center;
+    font-family: 'Bungee', cursive;
+    font-style: bold;
+    width: 10em;
+    border: 3px solid #ffc30f;
+    font-size: 2em;
+   
+  }
+.marketing .btn-outline-primary:hover{
+  
+   background: #ffc30f;
+          
+           
+
+}
+
+
+
+
+@media (min-width: 1025px) {
+
+  .marketing{
+    
+  margin-top: 15%;
+  
+}
+}
+
+/*****************************************
+Block-Footer
+******************************************/
+
+
+
+
+.block-footer{
+    
+    margin-top: 15%;
+    color: white;
+    text-align: center;
+}

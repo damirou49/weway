@@ -1,0 +1,210 @@
+
+/*----------------------------------------------------------------------------
+RESET
+----------------------------------------------------------------------------*/
+*{
+  margin : 0;
+}
+a {
+  text-decoration: none;
+}
+*,*::after,*::before{
+  clear: left;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------------------------------------------
+COMMONS
+------------------------------------------------------------------------ */
+.block-header .inner ,
+.block-main .inner{
+  width: 1200px;
+  margin:0 auto;
+  }
+  .clearfix{
+    clear: both;
+  }
+  .group:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+
+
+/* -------
+
+
+/*---------------------------------------------------------------------------
+BODY
+---------------------------------------------------------------------------*/
+
+body{
+  height: 600px;
+  }
+
+
+/*----------------------------------------------------------------------------
+HEADER
+----------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/**************************************************
+NAV 
+
+**********************************************/
+ 
+
+
+.nav-link {
+  
+  font-family: 'Bungee', cursive;
+  font-size: 1.5em;
+  text-align: center;
+  margin-left: 1em;
+ 
+
+}
+
+
+.nav-annexes{
+  
+  font-family: 'Bungee', cursive;
+  font-size: 1em;
+  text-align: center;
+  margin-left: 1em;
+ 
+
+}
+
+
+ .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, 
+ .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link{
+     
+ 
+  color:#3c0014;
+     
+     
+     
+}   
+    
+  
+.nav-link:hover,
+.nav-link:focus{
+  
+         color:#3c0014;}
+
+
+.deconexion{
+
+  display: none;
+
+}
+
+
+
+.navbar-toggler{
+
+  background: #ffc30f;
+}
+
+@media (min-width: 768px){
+
+
+  .deconexion{
+
+  display: contents;
+  float: right;
+  margin-right: 2rem;
+  margin-top: 2rem;
+
+  }
+
+}
+
+
+
+
+/**************************************************
+MAIN
+
+**********************************************/
+.block-main label {
+    
+    font-family: 'Bungee', cursive;
+    color: #3c0014;
+}
+
+
+.block-main .slogan {
+    
+ font-family: 'Bungee', cursive; 
+ color:#ffc30f;
+ text-align: center;
+;
+font-size: 1rem;
+
+
+
+    
+}
+
+.block-main .category-title{
+
+
+ color:#ffc30f;
+
+
+}
+
+
+.first-information{
+
+  margin-top: 3rem;
+}
+
+
+.btn-primary{
+
+  background-color: #ffc30f;
+  border-color: #ffc30f;
+}
+.btn-primary:hover{color:#fff;background-color:#ffc30f;border-color:#ffc30f}
+
+
+.card-group{
+
+
+  margin-top: 3rem;
+}
+
+
+.card {
+
+  border: none;
+}
+
+
+
+
+
+@media (min-width: 768px){
+
+
+  .block-main .slogan{
+
+
+
+    font-size: 3rem;
+
+   }
+
+   
+}
